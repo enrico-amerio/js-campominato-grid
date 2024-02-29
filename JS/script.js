@@ -1,6 +1,5 @@
 const grid = document.querySelector('.grid');
 const startBtn = document.getElementById('start-btn');
-let box;
 const difficultyOptions = document.getElementById('difficulty');
 
 startBtn.addEventListener('click', function(){
@@ -15,22 +14,22 @@ startBtn.addEventListener('click', function(){
     })
     difficultyOptions.addEventListener('change', function() {
       if(this.value === 'easy'){
-        box.classList.add('easy')
-        box.classList.remove('hard', 'normal')
+        box.classList.add('easy');
+        box.classList.remove('hard', 'normal');
         
       }else if(this.value === 'normal'){
-        box.classList.add('normal')
-        box.classList.remove('hard', 'easy')
+        box.classList.add('normal');
+        box.classList.remove('hard', 'easy');
         
       }else{
-        box.classList.add('hard')
-        box.classList.remove('normal', 'easy')
+        box.classList.add('hard');
+        box.classList.remove('normal', 'easy');
     
       };
     } );
   }
   
-})
+});
 
 
 
